@@ -45,7 +45,7 @@ const Form = () => {
         },
       };
 
-      await axios.post("http://localhost:5000/submit", formattedData);
+      await axios.post("https://enig-api.vercel.app/submit", formattedData);
       alert("Data saved successfully");
       setFormData({
         email: "",
